@@ -6,7 +6,7 @@ body {
     color: #929292;
     background-color: #fff;
     overflow-x: hidden !important;
-    -webkit-font-smoothing: antialiased;
+    position: relative;
 }
 .navbar-nav .nav-item .nav-link{
         display: inline-block;
@@ -123,11 +123,26 @@ body {
 .banners-sliders .carousel-control-next {
     width:7%;
 }
+.carousel-indicators{
+    position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  display: flex;
+  justify-content: start;
+  padding: 0;
+  margin-right: 0%;
+  margin-bottom: 0rem;
+  margin-left: -3.7%;
+  flex-direction: column;
+  top: 40%;
+}
 .carousel-indicators [data-bs-target] {
     box-sizing: content-box;
     flex: 0 1 auto;
-    width: 40px;
-    height: 3px;
+    width: 35px;
+    height: 2px;
     padding: 0;
     margin-right: 3px;
     margin-left: 3px;
@@ -150,7 +165,8 @@ body {
   .carousel-indicators .active{
     background-color: #080808;
     opacity: 1;
-    width:55px;
+    width:75px;
+    height: 2px;
   }
 /* .banners-sliders .carousel-indicators {
     position: absolute;
@@ -259,6 +275,17 @@ footer ul li a {
     color: #929292;
     font-size: 14px;
 }
+.cart-footer{
+    background-color: #080808;
+}
+.cart-footer ul li a:hover {
+    color: #929292;
+    font-size: 14px;
+}
+.cart-footer ul li a {
+    color: #fff;
+    font-size: 14px;
+}
 a{
     text-decoration: none;
     color: #080808;
@@ -271,6 +298,129 @@ a{
     -webkit-animation-name: flash;
     animation-name: flash;
   }
+  .login-modal .nav-item .nav-link{
+    color: #080808!important;
+    font-size: 16px!important;
+    line-height: inherit;
+    font-weight: 700!important;
+    letter-spacing: 2px!important;
+    text-transform: uppercase!important;
+    background-color: #fff!important;
+}
+.login-modal .nav-item .nav-link:hover{
+    color: #929292!important;
+}
+.login-modal input[type=password] ,.login-modal input[type=text] ,.login-modal input[type=email]{
+    position: relative;
+    width: 100%;
+    margin: 0 0 14px;
+    padding: 15px 20px;
+    font-family: inherit;
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: inherit;
+    color: #929292;
+    background-color: #fff;
+    border: 1px solid #e1e1e1;
+    outline: 0;
+    box-sizing: border-box;
+    height: 50px;
+}
+.login-modal .nav-tabs .nav-link{
+    color: #929292!important;
+}
+.login-modal .nav-tabs .nav-link.active{
+    color: #080808!important;
+}
+input[type=text]:focus , input[type=password]:focus , input[type=email]:focus{
+    background: #fafafa;
+    border: 1px solid #e1e1e1!important;
+    box-shadow: none !important;
+}
+.auth-wrapper {
+    position: relative;
+    min-height: 100vh;
+  }
+  .btn-login-close{
+    font-size: 44px;
+    position: absolute;
+    color: #fff;
+    right: 30px;
+    top: 20px;
+    font-weight: 500;
+    background: transparent!important;
+    border: none !important;
+  }.btn-login-close:hover{
+    color: #080808;
+  }
+.cart-container{
+    position: relative;
+    height: 325px;
+    background-image: url(../img/faq-title-img.jpg);
+}
+.cart-container h2{
+    position: absolute;
+    top: 40%;
+    left: 45%;
+    z-index: 25;
+    color: #fff;
+    font-weight: 700;
+    font-size: 50px;
+    letter-spacing: 3.7px;
+    text-transform: uppercase;
+}
+.cart-header{
+    font-size: 24px;
+    text-align: center;
+    color: #080808;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+}
+.cart-button{
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    width: auto;
+    outline: 0;
+    line-height: 30px;
+    letter-spacing: .15em;
+    font-weight: 700;
+    text-transform: uppercase;
+    box-sizing: border-box;
+    margin: 0;
+    transition: color .2s ease-in-out, background-color .2s ease-in-out, border-color .2s ease-in-out;
+    font-size: 14px;
+    color: #fff;
+    background-color: #080808;
+    border: 2px solid transparent;
+    padding: 14px 46px;
+    cursor: pointer;
+    z-index: 3;
+    border-radius: 0;
+}
+.cart-button:hover{
+    background-color: #313131;
+}
+.cart-footer .mkd-widget-title{
+    color: #fff;
+    padding-top: 50px;
+}
+.indicator-text{
+    /* position: absolute;
+    left: -25px;
+    top: -10px; */
+    font-family: 'Catamaran', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #999;
+    transition: color .2s;
+}
+.carousel-indicators button.active + .indicator-text {
+    color: #080808!important; /* Active color */
+    opacity: 1!important;
+}
 @media only screen and (max-width: 576px) {
         .banners-sliders .carousel-caption {
     width: 80%!important;
