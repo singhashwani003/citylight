@@ -421,6 +421,89 @@ input[type=text]:focus , input[type=password]:focus , input[type=email]:focus{
     color: #080808!important; /* Active color */
     opacity: 1!important;
 }
+.price {
+    position: relative;
+    margin: 0 0 61px;
+    line-height: 1;
+    color: #080808;
+    font-size: 24px;
+    font-family: Montserrat, sans-serif;
+}
+.mkd-single-product-title{
+    margin: 0 0 7px;
+    text-transform: uppercase;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 2px;
+    color: #080808;
+}
+table thead tr th{
+    font-size: 16px!important;
+    color: #080808!important;
+    line-height: 20px!important;
+    font-weight: 500!important;
+ 
+}
+.tab-pane table th{
+    font-size: 14px!important;
+    color: #080808!important;
+    line-height: 20px!important;
+    font-weight: 500!important;
+}
+th, td {
+    vertical-align: middle; /* Vertical centering */
+    padding: 10px; /* Optional: add some padding */
+}
+.price-table-input .form-select:focus{
+    background: #fafafa;
+    border: 1px solid #080808!important;
+    box-shadow: none !important;
+}
+.product-info input:focus{
+    background: #fafafa;
+    border: 1px solid #080808!important;
+    box-shadow: none !important;
+}
+.search-related-items input{
+    background: #fff;
+    border: 1px solid #080808!important;
+    height: 45px;
+}
+.search-related-items input , .search-related-items select{
+    background: #fff;
+    border: 1px solid #080808!important;
+    height: 45px;
+}
+.search-related-items input:focus , .search-related-items select:focus{
+    background: #fafafa;
+    border: 1px solid #080808!important;
+    box-shadow: none !important;
+}
+.search-related-items label{
+    font-size: 16px;
+    color: #080808;
+}
+.product-info input{
+    background: #fff;
+    border: 1px solid #080808!important;
+    height: 45px;
+}
+
+.product-info button{
+    background-color: #080808;
+    border: 1px solid #080808;
+    color: #fff;
+    width: 130px;
+    height: 45px;
+}
+.add-to-cart{
+    font-size: 12px;
+    line-height: 22px;
+    color: #080808;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
 @media only screen and (max-width: 576px) {
         .banners-sliders .carousel-caption {
     width: 80%!important;
