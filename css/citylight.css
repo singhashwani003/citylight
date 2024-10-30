@@ -298,17 +298,30 @@ a{
     -webkit-animation-name: flash;
     animation-name: flash;
   }
+  /* .login-modal .nav-item{
+    border: 1px solid #e1e1e1;
+} */
+.login-modal .nav-item .nav-link.active{
+    background-color: #080808;
+    color: #fff!important;
+    border: none;
+    border-radius: 0;
+}
   .login-modal .nav-item .nav-link{
-    color: #080808!important;
-    font-size: 16px!important;
+    background-color: #eaeaea;
+    color: #080808;
+    font-size: 16px;
     line-height: inherit;
-    font-weight: 700!important;
-    letter-spacing: 2px!important;
-    text-transform: uppercase!important;
-    background-color: #fff!important;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 16px 36px;
+    border-radius: 0;
 }
 .login-modal .nav-item .nav-link:hover{
-    color: #929292!important;
+    background-color: #080808;
+    color: #fff;
+    border-radius: 0;
 }
 .login-modal input[type=password] ,.login-modal input[type=text] ,.login-modal input[type=email]{
     position: relative;
@@ -327,15 +340,15 @@ a{
     height: 50px;
 }
 .login-modal .nav-tabs .nav-link{
-    color: #080808!important;
+    color: #080808;
 }
 .login-modal .nav-tabs .nav-link.active{
-    color: #080808!important;
+    color: #080808;
 }
 input[type=text]:focus , input[type=password]:focus , input[type=email]:focus{
     background: #fafafa;
-    border: 1px solid #e1e1e1!important;
-    box-shadow: none !important;
+    border: 1px solid #e1e1e1;
+    box-shadow: none ;
 }
 .auth-wrapper {
     position: relative;
@@ -567,7 +580,27 @@ th, td {
     z-index: 3;
     border-radius: 0;
 }
-
+.btn-check:checked + .btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check) + .btn:active {
+    color: var(--bs-btn-active-color);
+    background-color: var(--bs-btn-active-bg);
+    border-color: var(--bs-btn-active-border-color);
+  }
+  .btn-outline-success {
+    --bs-btn-color: #198754;
+    --bs-btn-border-color: #198754;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #198754;
+    --bs-btn-hover-border-color: #198754;
+    --bs-btn-focus-shadow-rgb: 25,135,84;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #198754;
+    --bs-btn-active-border-color: #198754;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #198754;
+    --bs-btn-disabled-bg: transparent;
+    --bs-btn-disabled-border-color: #198754;
+    --bs-gradient: none;
+  }
 @media only screen and (max-width: 576px) {
         .banners-sliders .carousel-caption {
     width: 80%!important;

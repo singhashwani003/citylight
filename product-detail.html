@@ -126,11 +126,11 @@
                 </div>
             </div>
             <div class="col-lg-5 col-xl-5 col-md-12 col-sm-12 px-0">
-                <h3 itemprop="name" class="mkd-single-product-title">"75" Floor Standing</h3>
-                <p class="price d-flex align-items-center">
+                <h3 itemprop="name" class="mkd-single-product-title mb-4">"75" Floor Standing</h3>
+                <!-- <p class="price d-flex align-items-center">
                     <span class="price-backup" style="font-size: 16px;color: #929292;">$210</span>
                     <span class="price-original ps-2">$170</span>
-                </p>
+                </p> -->
                 <!-- <h3 itemprop="name" class="mkd-single-product-title text-center pb-3">Price list</h3> -->
                 <table class="table table-striped price-table table-bordered table-hover price-table-input">
                     <thead>
@@ -175,7 +175,7 @@
                     </tbody>
                 </table>
                 <div class="my-4 py-4 description">
-                    <ul class="nav nav-tabs justify-content-between align-items-center flex-nowrap px-0" role="tablist" style="border: none!important;">
+                    <ul class="nav nav-tabs justify-content-start align-items-center flex-nowrap px-0" role="tablist" style="border: none!important;">
                         <li class="nav-item">
                             <a class="nav-link d-flex active" data-bs-toggle="tab" href="#product" role="tab">Product description</a>
                         </li>
@@ -223,7 +223,7 @@
                             <div class="input-group-prepend d-flex align-items-center">
                                 <span class="input-group-text">Quantity</span>
                             </div>
-                            <input type="number" class="form-control" value="1" placeholder="1">
+                            <input type="number" id="numberInput" class="form-control" value="1" placeholder="1">
                             <div class="input-group-append">
                                 <button class="btn btn-outline-dark" type="button">Add to cart</button>
                             </div>
@@ -398,7 +398,7 @@
                 <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3">
                     <h4 class="mkd-widget-title">Customer Service</h4>
                     <ul class="menu ps-0">
-                        <li  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1737"><a href="#">Help &amp; Contact Us</a></li>
+                        <li  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1737"><a href="#">Help &amp; FAQs</a></li>
                         <li  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1739"><a href="#">Returns &amp; Refunds</a></li>
                         <li  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1743"><a href="#">Online Stores</a></li>
                         <li  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1738"><a href="#">Terms &amp; Conditions</a></li>
@@ -407,10 +407,10 @@
                 <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3">
                     <h4 class="mkd-widget-title">Company</h4>
                     <ul class="menu ps-0">
-                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1745"><a href="#">What We Do</a></li>
-                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1767"><a href="#">Available Services</a></li>
-                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1751"><a href="#">Latest Posts</a></li>
-                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1753"><a href="#">FAQs</a></li>
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1745"><a href="#">Contact Us</a></li>
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1767"><a href="#">About Us</a></li>
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1751"><a href="#">What we do</a></li>
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1753"><a href="#">Available services</a></li>
                     </ul>
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3">
@@ -579,5 +579,14 @@
         </div>
         </div>
     </div>
+    <script>
+        const input = document.getElementById('numberInput');
+    
+        input.addEventListener('input', function() {
+            if (this.value < 0) {
+                this.value = 0;
+            }
+        });
+    </script>
 </body>
 </html>
