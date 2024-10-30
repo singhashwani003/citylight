@@ -72,24 +72,24 @@
     </nav>
       
     <div class="container py-5 product-card">
-        <div class="row d-flex align-items-center justify-content-start search-related-items pt-5">
-            <div class="col-lg-4 col-sm-12">
+        <h2 class="fw-bold text-start pt-5 pb-4 mb-4" style="color: #080808;">Search Rent Items</h2>
+        <div class="row d-flex align-items-center justify-content-start search-related-items">
+            <div class="col-lg-2 col-sm-12">
                 <form>
                     <div class="form-group mb-4 pb-4">
-                        <label class="mr-sm-2 selection text-dark" for="inlineFormCustomSelect">Search Rent Items<span class="text-danger ps-1">*</span></label>
-                        <div class="input-group mt-2">
-                            <span class="input-group-text" style="border: 1px solid #080808;"><i class="fa fa-search fill-white"></i></span>
-                            <input type="search" id="example-input-small" class="form-control form-control-sm" placeholder="Search Rent Items" aria-label="Username" aria-describedby="basic-addon1">
+                        <label class="mr-sm-2 selection text-dark" for="inlineFormCustomSelect">Start Date<span class="text-danger ps-1">*</span></label>
+                        <div class="form-group mt-1">
+                            <input type="date" class="form-control" value="2024-10-28">
                         </div>
                     </div>
                 </form>
             </div>
-            <div class="col-lg-3 col-sm-12">
+            <div class="col-lg-2 col-sm-12">
                 <form>
                     <div class="form-group mb-4 pb-4">
-                        <label class="mr-sm-2 selection text-dark" for="inlineFormCustomSelect">Start Date - End Date<span class="text-danger ps-1">*</span></label>
+                        <label class="mr-sm-2 selection text-dark" for="inlineFormCustomSelect">End Date<span class="text-danger ps-1">*</span></label>
                         <div class="form-group mt-1">
-                            <input type="date" class="form-control" value="2024-10-28">
+                            <input type="date" class="form-control" value="2024-10-30">
                         </div>
                     </div>
                 </form>
@@ -114,19 +114,20 @@
                     </div>
                 </form>
             </div>
-            <div class="col-lg-3 col-sm-12">
-                <div class="d-flex align-items-center justify-content-between px-3 pb-4">
-                    <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" style="height: 16px;">
-                      <label class="form-check-label fw-14" for="inlineRadio1">Tempered Glass</label>
+            <div class="col-lg-3 col-sm-12 mb-4 px-3">
+                <label class="mr-sm-2 selection text-dark mb-2 pb-1">Select Glass<span class="text-danger ps-1">*</span></label>
+                <div class="d-flex align-items-center justify-content-between pb-4">
+                    <div class=" ">
+                        <input type="checkbox" class="btn-check" name="options" id="option3" autocomplete="off">
+                        <label class="btn btn-outline-success rounded-pill font-weight-medium px-3" for="option3">Tempered Glass</label>
                     </div>
-                    <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" style="height: 16px;">
-                      <label class="form-check-label fw-14" for="inlineRadio2">Mirror Glass</label>
+                    <div class="pe-3">
+                        <input type="checkbox" class="btn-check" name="options" id="option4" autocomplete="off">
+                        <label class="btn btn-outline-success rounded-pill font-weight-medium px-3" for="option4">Mirror Glass</label>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-2 col-sm-12">
+            <div class="col-lg-3 col-sm-12">
                 <form>
                     <div class="form-group mb-4 pb-4">
                         <label class="mr-sm-2 selection text-dark" for="inlineFormCustomSelect">Size (mm)<span class="text-danger ps-1">*</span></label>
@@ -143,33 +144,42 @@
                 </form>
             </div>
             <div class="col-lg-3 col-sm-12">
-                <form>
-                    <div class="form-group mb-4 pb-4">
-                        <label class="mr-sm-2 selection text-dark" for="inlineFormCustomSelect">Select Color<span class="text-danger ps-1">*</span></label>
-                        <select class="form-select mr-sm-2 mt-1" id="inlineFormCustomSelect">
-                            <option selected="">Choose color</option>
-                            <option value="1">Black</option>
-                            <option value="2">White</option>
-                            <option value="3">Grey</option>
-                        </select>
+                <label class="mr-sm-2 selection text-dark mb-2 pb-1">Select Color<span class="text-danger ps-1">*</span></label>
+                <div class="d-flex align-items-center pb-4 justify-content-start">
+                    <div class="pe-3">
+                        <input type="checkbox" class="btn-check" name="options" id="option5" autocomplete="off">
+                        <label class="btn btn-outline-dark rounded-pill font-weight-medium px-3" for="option5">Black</label>
                     </div>
-                </form>
-            </div>
-            <div class="col-lg-3 col-sm-12">
-                <div class="d-flex align-items-center justify-content-between px-4 pb-4">
-                    <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" style="height: 16px;">
-                      <label class="form-check-label fw-14" for="inlineRadio1">Touch</label>
+                    <div class="pe-3">
+                        <input type="checkbox" class="btn-check" name="options" id="option6" autocomplete="off">
+                        <label class="btn btn-outline-warning rounded-pill font-weight-medium px-3" for="option6">Yellow</label>
                     </div>
-                    <div class="form-check form-check-inline pe-4">
-                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" style="height: 16px;">
-                      <label class="form-check-label fw-14" for="inlineRadio2">Non-Touch</label>
+                    <div class="pe-3">
+                        <input type="checkbox" class="btn-check" name="options" id="option7" autocomplete="off">
+                        <label class="btn btn-outline-secondary rounded-pill font-weight-medium px-3" for="option7">Grey</label>
+                    </div>
+                    <div class="pe-3">
+                        <input type="checkbox" class="btn-check" name="options" id="option8" autocomplete="off">
+                        <label class="btn btn-outline-success rounded-pill font-weight-medium px-3" for="option8">Green</label>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-sm-12">
-                <div class="d-flex justify-content-end align-items-center pb-4">
-                    <button type="button" class="btn btn-dark  btn-lg px-5 py-2 fw-14 fw-normal">Serach</button>
+            <div class="col-lg-3 col-sm-12 ps-5">
+                <label class="mr-sm-2 selection text-dark mb-2 ps-3 pb-1">Select Touch or Non-Touch<span class="text-danger ps-1">*</span></label>
+                <div class="d-flex align-items-center justify-content-start pb-4 ps-3">
+                    <div class="pe-3">
+                        <input type="checkbox" class="btn-check" name="options" id="option1" autocomplete="off">
+                        <label class="btn btn-outline-success rounded-pill font-weight-medium px-3" for="option1">Touch</label>
+                    </div>
+                    <div class="pe-3">
+                        <input type="checkbox" class="btn-check" name="options" id="option2" autocomplete="off">
+                        <label class="btn btn-outline-success rounded-pill font-weight-medium px-3" for="option2">Non Touch</label>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-sm-12">
+                <div class="d-flex justify-content-end align-items-center">
+                    <button type="button" class="btn btn-dark  btn-lg px-5 py-2 fw-14 fw-normal">Search</button>
                     <button type="button" class="btn btn-danger btn-lg px-5 py-2 fw-14 fw-normal ms-3">Reset</button>
                 </div>
             </div>
@@ -184,8 +194,8 @@
                                 <div class="mkd-pli-new-product">NEW</div>
                             </div>
                         </div>
-                        <div class="card-body py-5">
-                            <img src="./img/65_FloorStanding.png" class="d-block mx-auto" style="width:300px; height:400px;">
+                        <div class="card-body py-4 px-3">
+                            <img src="./img/65_FloorStanding.png" class="d-block mx-auto" style="width:100%; height:500px;">
                         </div>
                     </div>
                 </a>
@@ -204,8 +214,8 @@
                                 <div class="mkd-pli-new-product">-19%</div>
                             </div>
                         </div>
-                        <div class="card-body py-5">
-                            <img src="./img/75_FloorStanding.png" class="d-block mx-auto" style="width:300px; height:400px;">
+                        <div class="card-body py-4 px-3">
+                            <img src="./img/75_FloorStanding.png" class="d-block mx-auto" style="width:100%; height:500px;">
                         </div>
                     </div>
                 </a>
@@ -223,8 +233,8 @@
                                 <div class="mkd-pli-new-product">NEW</div>
                             </div>
                         </div>
-                        <div class="card-body py-5">
-                            <img src="./img/FloorStandingADPlayer1.png" class="d-block mx-auto" style="width:300px; height:400px;">
+                        <div class="card-body py-4 px-3">
+                            <img src="./img/FloorStandingADPlayer1.png" class="d-block mx-auto" style="width:100%; height:500px;">
                         </div>
                     </div>
                 </a>
@@ -242,8 +252,8 @@
                                 <div class="mkd-pli-new-product">NEW</div>
                             </div>
                         </div>
-                        <div class="card-body py-5">
-                            <img src="./img/FloorStandingADPlayer2.png" class="d-block mx-auto" style="width:300px; height:400px;">
+                        <div class="card-body py-4 px-3">
+                            <img src="./img/FloorStandingADPlayer2.png" class="d-block mx-auto" style="width:100%; height:500px;">
                         </div>
                     </div>
                 </a>
@@ -261,8 +271,8 @@
                                 <div class="mkd-pli-new-product">NEW</div>
                             </div>
                         </div>
-                        <div class="card-body py-5">
-                            <img src="./img/FullScreenDigitalsinage.png" class="d-block mx-auto" style="width:300px; height:400px;">
+                        <div class="card-body py-4 px-3">
+                            <img src="./img/FullScreenDigitalsinage.png" class="d-block mx-auto" style="width:100%; height:500px;">
                         </div>
                     </div>
                 </a>
@@ -280,8 +290,8 @@
                                 <div class="mkd-pli-new-product">NEW</div>
                             </div>
                         </div>
-                        <div class="card-body py-5">
-                            <img src="./img/MagicMirrorScreen.png" class="d-block mx-auto" style="width:300px; height:400px;">
+                        <div class="card-body py-4 px-3">
+                            <img src="./img/MagicMirrorScreen.png" class="d-block mx-auto" style="width:100%; height:500px;">
                         </div>
                     </div>
                 </a>
@@ -300,8 +310,8 @@
                                 <div class="mkd-pli-new-product">-20%</div>
                             </div>
                         </div>
-                        <div class="card-body py-5">
-                            <img src="./img/65_FloorStanding.png" class="d-block mx-auto" style="width:300px; height:400px;">
+                        <div class="card-body py-4 px-3">
+                            <img src="./img/65_FloorStanding.png" class="d-block mx-auto" style="width:100%; height:500px;">
                         </div>
                     </div>
                 </a>
@@ -319,8 +329,8 @@
                                 <div class="mkd-pli-new-product">NEW</div>
                             </div>
                         </div>
-                        <div class="card-body py-5">
-                            <img src="./img/75_FloorStanding.png" class="d-block mx-auto" style="width:300px; height:400px;">
+                        <div class="card-body py-4 px-3">
+                            <img src="./img/75_FloorStanding.png" class="d-block mx-auto" style="width:100%; height:500px;">
                         </div>
                     </div>
                 </a>
