@@ -601,6 +601,31 @@ th, td {
     --bs-btn-disabled-border-color: #198754;
     --bs-gradient: none;
   }
+  .contact-section h3{
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 2px;
+    margin: 20px 0;
+    color: #080808;
+    text-transform: uppercase;
+}
+.contact-section p{
+    font-size: 16px;
+    margin: 20px 0;
+    width: 90%;
+    text-align: justify;
+}
+textarea:focus{
+  background: #fafafa!important;
+  border: 1px solid #e1e1e1!important;
+  box-shadow: none!important;
+}
+.facebook{
+    border-radius: 50%;
+    color: #fff;
+    font-size: 16px;
+    background-color: #080808;
+}
 @media only screen and (max-width: 576px) {
         .banners-sliders .carousel-caption {
     width: 80%!important;
