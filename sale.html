@@ -35,16 +35,16 @@
                     <a class="nav-link ps-0" href="./index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="./rent.html">Rent</a>
+                    <a class="nav-link active" href="./rent.html">Rent</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link active" href="./sale.html">Sale</a>
+                    <a class="nav-link" href="./sale.html">Sale</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="contact.html">Contact Us</a>
                     </li>
                     <!-- <li class="nav-item">
-                        <a class="nav-link" href="./rent.html">About Us</a>
+                        <a class="nav-link" href="./Sale.html">About Us</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="./sale.html">Contact Us</a>
@@ -85,27 +85,27 @@
     <div class="container py-5 product-card">
         <h2 class="fw-bold text-start pt-5 pb-4 mb-4" style="color: #080808;">Search Sale Items</h2>
         <div class="row d-flex align-items-center justify-content-start search-related-items">
-            <div class="col-lg-2 col-sm-12">
+            <div class="col-lg-3 col-sm-12">
                 <form>
-                    <div class="form-group mb-4 pb-4">
+                    <div class="form-group">
                         <label class="mr-sm-2 selection text-dark" for="inlineFormCustomSelect">Start Date<span class="text-danger ps-1">*</span></label>
                         <div class="form-group mt-1">
-                            <input type="date" class="form-control" value="2024-10-28">
+                            <input type="date" class="form-control" value="DD/MM/YYYY">
                         </div>
                     </div>
                 </form>
             </div>
-            <div class="col-lg-2 col-sm-12">
+            <div class="col-lg-3 col-sm-12">
                 <form>
-                    <div class="form-group mb-4 pb-4">
+                    <div class="form-group">
                         <label class="mr-sm-2 selection text-dark" for="inlineFormCustomSelect">End Date<span class="text-danger ps-1">*</span></label>
                         <div class="form-group mt-1">
-                            <input type="date" class="form-control" value="2024-10-30">
+                            <input type="date" class="form-control" value="DD/MM/YYYY">
                         </div>
                     </div>
                 </form>
             </div>
-            <div class="col-lg-2 col-sm-12">
+            <!-- <div class="col-lg-2 col-sm-12">
                 <form>
                     <div class="form-group mb-4 pb-4">
                         <label class="mr-sm-2 selection text-dark" for="inlineFormCustomSelect">Size (inches)<span class="text-danger ps-1">*</span></label>
@@ -188,22 +188,22 @@
                         <label class="btn btn-outline-success rounded-pill font-weight-medium px-3" for="option8">Green</label>
                     </div>
                 </div>
-            </div>
+            </div> -->
             <div class="col-lg-6 col-sm-12">
                 <div class="d-flex justify-content-end align-items-center">
-                    <button type="button" class="btn btn-dark  btn-lg px-5 py-2 fw-14 fw-normal">Search</button>
-                    <button type="button" class="btn btn-danger btn-lg px-5 py-2 fw-14 fw-normal ms-3">Reset</button>
+                    <button type="button" class="btn btn-dark  btn-md px-4 py-2 fw-14 fw-normal">Search</button>
+                    <button type="button" class="btn btn-danger btn-md px-4 py-2 fw-14 fw-normal ms-3">Reset</button>
                 </div>
             </div>
         </div>
         <h2 class="fw-bold text-start pt-5 mt-5" style="color: #080808;">Related Sale Items</h2>
         <div class="row px-0 pb-5 ">
-            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 mt-4 mb-4 px-4">
+            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 mt-5 mb-4 px-4">
                 <a href="./product-detail.html">
                     <div class="card border border-0 shadow" style="background-color: #e8e5e5;">
                         <div class="card-header border border-0 pt-3 px-4" style="background-color: #e8e5e5!important;">
-                            <div class="d-flex justify-content-between align-=align-items-center">
-                                <div class="mkd-pli-new-product">NEW</div>
+                            <div class="d-flex justify-content-end align-items-center">
+                                <a href="./product-detail.html" class="mkd-pli-new-product rounded-pill">View</a>
                             </div>
                         </div>
                         <div class="card-body py-4 px-3">
@@ -211,19 +211,17 @@
                         </div>
                     </div>
                 </a>
-                <h5 class="entry-title mkd-pli-title mt-4 mb-3 text-center">
-                    <a href="#">"65" Floor Standing</a>
-                    <div class="mkd-pli-price">$160</div>
-                    <div class="mkd-pli-add-to-cart">Add to cart</div>
-                </h5>
+                <div class="d-flex justify-content-between align-items-center mt-3">
+                    <h5 class="entry-title mkd-pli-title mt-4 mb-3 text-center card-title-name">"65" Floor Standing</h5>
+                    <a href="./product-detail.html" class="mkd-pli-new-product rounded-pill" style="padding: 4px 20px;">View</a>
+                </div>
             </div>
-            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 mt-4 mb-4 px-4">
+            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 mt-5 mb-4 px-4">
                 <a href="./product-detail.html">
                     <div class="card border border-0 shadow" style="background-color: #e8e5e5;">
                         <div class="card-header border border-0 pt-3 px-4" style="background-color: #e8e5e5!important;">
-                            <div class="d-flex justify-content-between align-=align-items-center">
-                                <div class="mkd-pli-new-product">NEW</div>
-                                <div class="mkd-pli-new-product">-19%</div>
+                            <div class="d-flex justify-content-end align-items-center">
+                                <a href="./product-detail.html" class="mkd-pli-new-product rounded-pill">View</a>
                             </div>
                         </div>
                         <div class="card-body py-4 px-3">
@@ -231,18 +229,17 @@
                         </div>
                     </div>
                 </a>
-                <h5 class="entry-title mkd-pli-title mt-4 mb-3 text-center">
-                    <a href="#">"75" Floor Standing</a>
-                    <div class="mkd-pli-price">$160</div>
-                    <div class="mkd-pli-add-to-cart">Add to cart</div>
-                </h5>
+                <div class="d-flex justify-content-between align-items-center mt-3">
+                    <h5 class="entry-title mkd-pli-title mt-4 mb-3 text-center card-title-name">"75" Floor Standing</h5>
+                    <a href="./product-detail.html" class="mkd-pli-new-product rounded-pill" style="padding: 4px 20px;">View</a>
+                </div>
             </div>
-            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 mt-4 mb-4 px-4">
+            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 mt-5 mb-4 px-4">
                 <a href="./product-detail.html">
                     <div class="card border border-0 shadow" style="background-color: #e8e5e5;">
                         <div class="card-header border border-0 pt-3 px-4" style="background-color: #e8e5e5!important;">
-                            <div class="d-flex justify-content-between align-=align-items-center">
-                                <div class="mkd-pli-new-product">NEW</div>
+                            <div class="d-flex justify-content-end align-items-center">
+                                <a href="./product-detail.html" class="mkd-pli-new-product rounded-pill">View</a>
                             </div>
                         </div>
                         <div class="card-body py-4 px-3">
@@ -250,18 +247,17 @@
                         </div>
                     </div>
                 </a>
-                <h5 class="entry-title mkd-pli-title mt-4 mb-3 text-center">
-                    <a href="#">floor standing ad player</a>
-                    <div class="mkd-pli-price">$160</div>
-                    <div class="mkd-pli-add-to-cart">Add to cart</div>
-                </h5>
+                <div class="d-flex justify-content-between align-items-center mt-3">
+                    <h5 class="entry-title mkd-pli-title mt-4 mb-3 text-center card-title-name">floor standing ad player</h5>
+                    <a href="./product-detail.html" class="mkd-pli-new-product rounded-pill" style="padding: 4px 20px;">View</a>
+                </div>
             </div>
-            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 mt-4 mb-4 px-4">
+            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 mt-5 mb-4 px-4">
                 <a href="./product-detail.html">
                     <div class="card border border-0 shadow" style="background-color: #e8e5e5;">
                         <div class="card-header border border-0 pt-3 px-4" style="background-color: #e8e5e5!important;">
-                            <div class="d-flex justify-content-between align-=align-items-center">
-                                <div class="mkd-pli-new-product">NEW</div>
+                            <div class="d-flex justify-content-end align-items-center">
+                                <a href="./product-detail.html" class="mkd-pli-new-product rounded-pill">View</a>
                             </div>
                         </div>
                         <div class="card-body py-4 px-3">
@@ -269,18 +265,17 @@
                         </div>
                     </div>
                 </a>
-                <h5 class="entry-title mkd-pli-title mt-4 mb-3 text-center">
-                    <a href="#">floor standing ad player</a>
-                    <div class="mkd-pli-price">$160</div>
-                    <div class="mkd-pli-add-to-cart">Add to cart</div>
-                </h5>
+                <div class="d-flex justify-content-between align-items-center mt-3">
+                    <h5 class="entry-title mkd-pli-title mt-4 mb-3 text-center card-title-name">floor standing ad player</h5>
+                    <a href="./product-detail.html" class="mkd-pli-new-product rounded-pill" style="padding: 4px 20px;">View</a>
+                </div>
             </div>
-            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 mt-4 mb-4 px-4">
+            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 mt-5 mb-4 px-4">
                 <a href="./product-detail.html">
                     <div class="card border border-0 shadow" style="background-color: #e8e5e5;">
                         <div class="card-header border border-0 pt-3 px-4" style="background-color: #e8e5e5!important;">
-                            <div class="d-flex justify-content-between align-=align-items-center">
-                                <div class="mkd-pli-new-product">NEW</div>
+                            <div class="d-flex justify-content-end align-items-center">
+                                <a href="./product-detail.html" class="mkd-pli-new-product rounded-pill">View</a>
                             </div>
                         </div>
                         <div class="card-body py-4 px-3">
@@ -288,18 +283,17 @@
                         </div>
                     </div>
                 </a>
-                <h5 class="entry-title mkd-pli-title mt-4 mb-3 text-center">
-                    <a href="#">"75" Full Screen Kiosk</a>
-                    <div class="mkd-pli-price">$160</div>
-                    <div class="mkd-pli-add-to-cart">Add to cart</div>
-                </h5>
+                <div class="d-flex justify-content-between align-items-center mt-3">
+                    <h5 class="entry-title mkd-pli-title mt-4 mb-3 text-center card-title-name">"75" Full Screen Kiosk</h5>
+                    <a href="./product-detail.html" class="mkd-pli-new-product rounded-pill" style="padding: 4px 20px;">View</a>
+                </div>
             </div>
-            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 mt-4 mb-4 px-4">
+            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 mt-5 mb-4 px-4">
                 <a href="./product-detail.html">
                     <div class="card border border-0 shadow" style="background-color: #e8e5e5;">
                         <div class="card-header border border-0 pt-3 px-4" style="background-color: #e8e5e5!important;">
-                            <div class="d-flex justify-content-between align-=align-items-center">
-                                <div class="mkd-pli-new-product">NEW</div>
+                            <div class="d-flex justify-content-end align-items-center">
+                                <a href="./product-detail.html" class="mkd-pli-new-product rounded-pill">View</a>
                             </div>
                         </div>
                         <div class="card-body py-4 px-3">
@@ -307,19 +301,17 @@
                         </div>
                     </div>
                 </a>
-                <h5 class="entry-title mkd-pli-title mt-4 mb-3 text-center">
-                    <a href="#">"43" magic mirror screen</a>
-                    <div class="mkd-pli-price">$160</div>
-                    <div class="mkd-pli-add-to-cart">Add to cart</div>
-                </h5>
+                <div class="d-flex justify-content-between align-items-center mt-3">
+                    <h5 class="entry-title mkd-pli-title mt-4 mb-3 text-center card-title-name">"43" magic mirror screen</h5>
+                    <a href="./product-detail.html" class="mkd-pli-new-product rounded-pill" style="padding: 4px 20px;">View</a>
+                </div>
             </div>
-            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 mt-4 mb-4 px-4">
+            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 mt-5 mb-4 px-4">
                 <a href="./product-detail.html">
                     <div class="card border border-0 shadow" style="background-color: #e8e5e5;">
                         <div class="card-header border border-0 pt-3 px-4" style="background-color: #e8e5e5!important;">
-                            <div class="d-flex justify-content-between align-=align-items-center">
-                                <div class="mkd-pli-new-product">NEW</div>
-                                <div class="mkd-pli-new-product">-20%</div>
+                            <div class="d-flex justify-content-end align-items-center">
+                                <a href="./product-detail.html" class="mkd-pli-new-product rounded-pill">View</a>
                             </div>
                         </div>
                         <div class="card-body py-4 px-3">
@@ -327,18 +319,17 @@
                         </div>
                     </div>
                 </a>
-                <h5 class="entry-title mkd-pli-title mt-4 mb-3 text-center">
-                    <a href="#">"65" Floor Standing</a>
-                    <div class="mkd-pli-price">$160</div>
-                    <div class="mkd-pli-add-to-cart">Add to cart</div>
-                </h5>
+                <div class="d-flex justify-content-between align-items-center mt-3">
+                    <h5 class="entry-title mkd-pli-title mt-4 mb-3 text-center card-title-name">"65" Floor Standing</h5>
+                    <a href="./product-detail.html" class="mkd-pli-new-product rounded-pill" style="padding: 4px 20px;">View</a>
+                </div>
             </div>
-            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 mt-4 mb-4 px-4">
+            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 mt-5 mb-4 px-4">
                 <a href="./product-detail.html">
                     <div class="card border border-0 shadow" style="background-color: #e8e5e5;">
                         <div class="card-header border border-0 pt-3 px-4" style="background-color: #e8e5e5!important;">
-                            <div class="d-flex justify-content-between align-=align-items-center">
-                                <div class="mkd-pli-new-product">NEW</div>
+                            <div class="d-flex justify-content-end align-items-center">
+                                <a href="./product-detail.html" class="mkd-pli-new-product rounded-pill">View</a>
                             </div>
                         </div>
                         <div class="card-body py-4 px-3">
@@ -346,11 +337,12 @@
                         </div>
                     </div>
                 </a>
-                <h5 class="entry-title mkd-pli-title mt-4 mb-3 text-center">
-                    <a href="#">"75" Floor Standing</a>
-                    <div class="mkd-pli-price">$160</div>
+                    <!-- <div class="mkd-pli-price">$160</div> -->
+                    <div class="d-flex justify-content-between align-items-center mt-3">
+                        <h5 class="entry-title mkd-pli-title mt-4 mb-3 text-center card-title-name">"75" Floor Standing</h5>
+                        <a href="./product-detail.html" class="mkd-pli-new-product rounded-pill" style="padding: 4px 20px;">View</a>
+                    </div>
                     <div class="mkd-pli-add-to-cart">Add to cart</div>
-                </h5>
             </div>
         </div>
     </div>
