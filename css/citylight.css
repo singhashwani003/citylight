@@ -206,14 +206,14 @@ body {
     font-size: 12px;
     text-align: center;
     font-weight: 500;
-    border: 1px solid #080808;
+    /* border: 1px solid #080808;
     border-radius: 8px;
-    padding: 4px 16px;
+    padding: 4px 16px; */
 }
-.mkd-pli-new-product:hover{
+/* .mkd-pli-new-product:hover{
     background-color: #080808;
     color: #fff;
-}
+} */
 /* .product-card h5 a{
     font-size: 20px;
     line-height: 22px;
