@@ -166,7 +166,8 @@
                         <th><span class="d-flex align-items-center justify-content-center align-self-center text-center">Touch or <br>Non touch</span></th>
                         <th><span class="d-flex align-items-center justify-content-center align-self-center text-center">Color</span></th>
                         <th><span class="d-flex align-items-center justify-content-center align-self-center text-center">Price <br> per day</span></th>
-                        <th><span class="d-flex align-items-center justify-content-center align-self-center text-center">Quantity</span></th>
+                        <th><span class="d-flex align-items-center justify-content-center align-self-center text-center">Qty</span></th>
+                        <th><span class="d-flex align-items-center justify-content-center align-self-center text-center">Details</span></th>
                       </tr>
                     </thead>
                     <tbody>
@@ -227,6 +228,7 @@
                         </td>
                         <td><span class="d-flex align-items-center justify-content-center align-self-center text-center">150 omr</span></td>
                         <td><span class="d-flex align-items-center justify-content-center align-self-center text-center">1</span></td>
+                        <td><a class="d-flex align-items-center justify-content-center align-self-center text-center tab-content-additional" data-bs-toggle="tab" href="#additional" role="tab"><i class="fa fa-info-circle" style="font-size:20px;color:red"></i></a></td>
                       </tr>
                     </tbody>
                 </table>
@@ -672,5 +674,20 @@
             }
         });
     </script>
+    <script>
+        // Get the link inside the table cell and add event listener
+        document.querySelector('tab-content-additional').addEventListener('click', function (e) {
+            // Prevent default behavior (if any)
+            e.preventDefault();
+            
+            // Get the target href (which will be the id of the tab)
+            var target = this.getAttribute('#additional');
+            
+            // Use Bootstrap's Tab API to show the corresponding tab
+            var tab = new bootstrap.Tab(document.querySelector(target));
+            tab.show(); // Show the corresponding tab
+        });
+    </script>
+    
 </body>
 </html>
