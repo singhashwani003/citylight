@@ -228,7 +228,7 @@
                         </td>
                         <td><span class="d-flex align-items-center justify-content-center align-self-center text-center">150 omr</span></td>
                         <td><span class="d-flex align-items-center justify-content-center align-self-center text-center">1</span></td>
-                        <td><a class="d-flex align-items-center justify-content-center align-self-center text-center tab-content-additional" data-bs-toggle="tab" href="#additional" role="tab"><i class="fa fa-info-circle" style="font-size:20px;color:red"></i></a></td>
+                        <td><a class="d-flex align-items-center justify-content-center align-self-center text-center" data-bs-toggle="collapse" href="#additional"><i class="fa fa-info-circle" style="font-size:20px;color:red"></i></a></td>
                       </tr>
                     </tbody>
                 </table>
@@ -248,7 +248,7 @@
                         <div class="tab-pane active" id="product" role="tabpanel">
                             <p style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut ullamcorper leo, eget euismod orci. Cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus. Vestibulum ultricies aliquam convallis. Maecenas ut tellus mi. Proin tincidunt, lectus eu volutpat mattis, ante metus lacinia tellus, vitae condimentum nulla enim bibendum nibh. Praesent turpis risus, interdum nec venenatis id, pretium sit amet purus. Interdum et malesuada fames.</p>
                         </div>
-                        <div class="tab-pane" id="additional" role="tabpanel">
+                        <div class="tab-pane collapse" id="additional" role="tabpanel">
                             <table class="table table-striped price-table table-bordered">
                                 <tbody>
                                   <tr>
@@ -672,20 +672,6 @@
             if (this.value < 0) {
                 this.value = 0;
             }
-        });
-    </script>
-    <script>
-        // Get the link inside the table cell and add event listener
-        document.querySelector('tab-content-additional').addEventListener('click', function (e) {
-            // Prevent default behavior (if any)
-            e.preventDefault();
-            
-            // Get the target href (which will be the id of the tab)
-            var target = this.getAttribute('#additional');
-            
-            // Use Bootstrap's Tab API to show the corresponding tab
-            var tab = new bootstrap.Tab(document.querySelector(target));
-            tab.show(); // Show the corresponding tab
         });
     </script>
     

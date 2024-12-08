@@ -27,7 +27,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-sm navbar-light bg-light sticky-top" style="height:100px;">
+    <nav class="navbar navbar-expand-sm navbar-light bg-light sticky-top desktop-view" style="height:100px;">
         <div class="container d-flex justify-content-between align-items-center">
             <div class="d-flex justify-content-start flex-grow-1" style="margin-right: -155px;">
                 <ul class="navbar-nav">
@@ -76,6 +76,51 @@
                 </a>
                 <a class="mkd-header-cart" href="#">
                     <span class="mkd-cart-icon-text"><i class="fa fa-search d-flex align-items-center"></i></span>	
+                </a>
+            </div>
+          </div>
+        </div>
+    </nav>
+    <nav class="navbar navbar-expand-sm navbar-light bg-light sticky-top mobile-view py-3">
+        <div class="container d-flex justify-content-between align-items-center ps-0">
+            <div class="me-auto ps-3">
+                <a class="navbar-brand fw-bold" href="./index.html">
+                    <img src="./img/citylight-logo.png" style="height:55px;">
+                </a>
+            </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mynavbar" style="background-color: rgb(8, 8, 8);">
+            <div class="d-flex justify-content-end flex-column">
+                <ul class="navbar-nav d-flex flex-column ps-2">
+                    <li class="nav-item py-1 mt-3">
+                    <a class="nav-link active" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item py-1">
+                    <a class="nav-link" href="./rent.html">Rent</a>
+                    </li>
+                    <li class="nav-item py-1">
+                    <a class="nav-link" href="./sale.html">Sale</a>
+                    </li>
+                    <li class="nav-item py-1">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="d-flex justify-content-end flex-column ps-2">
+                <a class="mkd-header-cart py-1" href="./product-cart.html">
+                    <span class="mkd-cart-icon-text pe-1 text-light">CART</span>
+                    <span class="mkd-cart-info">
+                        <span class="mkd-cart-info-total text-light" style="font-size: 12px;">(<span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>0</span>)</span>
+                    </span>			
+                </a>
+                <a class="mkd-header-cart py-1" href="#" data-bs-toggle="modal" data-bs-target="#myModal">
+                    <span class="mkd-cart-icon-text text-light"><i class="fa fa-user-circle"></i></span>
+                    <span class="mkd-cart-icon-text ps-1 text-light">LOGIN</span>		
+                </a>
+                <a class="mkd-header-cart py-1 mb-3" href="#">
+                    <span class="mkd-cart-icon-text text-light"><i class="fa fa-search d-flex align-items-center"></i></span>	
                 </a>
             </div>
           </div>
