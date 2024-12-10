@@ -1053,4 +1053,131 @@ footer .container-fluid .row{
     margin-top: 10px!important;
     margin-bottom: 10px!important;
   }
+  .details-product{
+    margin : 0px!important;
+    padding: 20px 20px!important;
+  }
+  .details-product .row .pe-5{
+    padding-right: 0px!important;
+   }
+   .high-img{
+    margin-top: 30px;
+   }
+   .high-img img{
+    width: 100%;
+    height: 400px;
+   }
+   .mkd-single-product-title.m-0 {
+    margin: 46px 16px 0px 16px!important;
+  }
+  .description .nav-item .nav-link {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 10px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    color: #323232;
+    background-color: #fafafa;
+    text-transform: uppercase;
+    border: none;
+    padding: 16px 20px;
+  }
+  .related-detail-img img{
+    height: 400px!important;
+  }
+  .high-img img{
+    height: 400px!important;
+  }
+  .quantity-text .input-group-text {
+    height: 50px;
+    border-radius: 0px;
+    border-right: none !important;
+    width: 80px;
+    text-align: center;
+    padding-left: 10px;
+  }
+  .quantity-text a {
+    height: 50px;
+    vertical-align: middle;
+    width: auto;
+    outline: 0;
+    line-height: 30px;
+    letter-spacing: .15em;
+    font-weight: 700;
+    text-transform: uppercase;
+    box-sizing: border-box;
+    margin: 0;
+    transition: color .2s ease-in-out, background-color .2s ease-in-out, border-color .2s ease-in-out;
+    padding: 13px 46px;
+    font-size: 10px;
+    color: #fff;
+    background-color: #080808;
+    border: 2px solid transparent;
+    padding: 6px 16px;
+    cursor: pointer;
+    z-index: 3;
+    border-radius: 0;
+    display: flex;
+    align-items: center;
+  }
+  .related-product-heading{
+    margin : 0px!important;
+    padding: 20px 20px!important;
+  }
+  .cart-collt{
+    padding-left: 0px!important;
+    padding-top: 0!important;
+  }
+  .cart-collaterals{
+    padding-top: 20px!important;
+    margin-bottom: 0px!important;
+  }
+  .shipping-calculator-button {
+    display: block;
+    font-family: Catamaran, sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 0 0 30px;
+    color: #080808;
+    font-size: 12px;
+  }
+  .cart-subtotal {
+    border: 0;
+    font-size: 14px;
+    color: #080808;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 8px 0px 8px 0px;
+    text-align: left;
+    font-weight: 600;
+  }
+  .wishlist-container{
+    margin: 0px!important;
+  }
+  .order{
+    padding-left: 16px!important;
+  }
+  .billing{
+    margin-top: 0px!important;
+    margin-bottom: 0px!important;
+  }
+  .return{
+    margin-top: 10px!important;
+    margin-bottom: 30px!important;
+    padding-top: 0.5rem !important;
+    padding-bottom: 0.5rem !important;
+  }
+  .billing-overview .mkd-single-product-title {
+    margin: 0 0 0px;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 36px;
+    letter-spacing: 2px;
+    color: #080808;
+  }
+  .billing-overview .mkd-single-product-title.m-0 {
+    margin: 0px!important;
+  }
 }
