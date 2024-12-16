@@ -191,7 +191,7 @@
                         <th><span class="d-flex align-items-center justify-content-center align-self-center text-center">Tempered glass <br> or Mirror glass</span></th>
                         <th><span class="d-flex align-items-center justify-content-center align-self-center text-center">Touch or <br>Non touch</span></th>
                         <th><span class="d-flex align-items-center justify-content-center align-self-center text-center">Color</span></th>
-                        <th><span class="d-flex align-items-center justify-content-center align-self-center text-center">Price</th>
+                        <th><span class="d-flex align-items-center justify-content-center align-self-center text-center">Price <br> per day</span></th>
                         <th><span class="d-flex align-items-center justify-content-center align-self-center text-center">Qty</span></th>
                         <th><span class="d-flex align-items-center justify-content-center align-self-center text-center">Details</span></th>
                       </tr>
@@ -254,8 +254,12 @@
                         </td>
                         <td><span class="d-flex align-items-center justify-content-center align-self-center text-center">150 omr</span></td>
                         <td><span class="d-flex align-items-center justify-content-center align-self-center text-center">1</span></td>
-                        <td><a class="d-flex align-items-center justify-content-center align-self-center text-center" data-bs-toggle="collapse" href="#additional"><i class="fa fa-info-circle" style="font-size:20px;color:red"></i></a></td>
-                      </tr>
+                        <td>
+                            <span class="d-flex align-items-center justify-content-center align-self-center text-center">
+                                <a class="text-center tablinks" onclick="openCity(event, 'Additional')"><i class="fa fa-info-circle" style="font-size:20px;color:red"></i></a>
+                            </span>
+                        </td>
+                    </tr>
                     </tbody>
                 </table>
                 <table class="table table-striped price-table table-bordered mobile-view">
@@ -327,7 +331,7 @@
                         </td>
                       </tr>
                       <tr>
-                        <th><span class="d-flex align-items-center justify-content-center align-self-center text-center">Price</span></th>
+                        <th><span class="d-flex align-items-center justify-content-center align-self-center text-center">Price <br> per day</span></th>
                         <td><span class="d-flex align-items-center justify-content-center align-self-center text-center">150 omr</span></td>
                       </tr>
                       <tr>
@@ -336,7 +340,11 @@
                       </tr>
                       <tr>
                         <th><span class="d-flex align-items-center justify-content-center align-self-center text-center">Details</span></th>
-                        <td><a class="d-flex align-items-center justify-content-center align-self-center text-center" data-bs-toggle="collapse" href="#additional"><i class="fa fa-info-circle" style="font-size:20px;color:red"></i></a></td>
+                        <td>
+                            <span class="d-flex align-items-center justify-content-center align-self-center text-center">
+                                <a class="text-center tablinks detail-view" onclick="openCity(event, 'Additional')"><i class="fa fa-info-circle" style="font-size:20px;color:red"></i></a>
+                            </span>
+                        </td>
                       </tr>
                     </tbody>
                 </table>
@@ -344,19 +352,19 @@
                     <i class="fa fa-info text-danger"></i>
                 </a> -->
                 <div class="my-4 py-4 description">
-                    <ul class="nav nav-tabs justify-content-start align-items-center flex-nowrap px-0" role="tablist" style="border: none!important;">
+                    <ul class="d-flex justify-content-start align-items-center flex-nowrap px-0 mb-0" role="tablist" style="border: none!important;">
                         <li class="nav-item">
-                            <a class="nav-link d-flex active" data-bs-toggle="tab" href="#product" role="tab">Product description</a>
+                            <a class="tablinks d-flex" onclick="openCity(event, 'Product')" id="defaultOpen">Product description</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link d-flex" data-bs-toggle="tab" href="#additional" role="tab">Additional Information</a>
+                            <a class="tablinks" onclick="openCity(event, 'Additional')" id="additional-info-tab">Additional Information</a>
                         </li>
                     </ul>
-                    <div class="tab-content mb-2 product-info p-4" style="border: 1px solid #e1e1e1;">
-                        <div class="tab-pane active" id="product" role="tabpanel">
+                    <div class="mb-2 product-info p-4" style="border: 1px solid #e1e1e1;">
+                        <div id="Product" class="tabcontent">
                             <p style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut ullamcorper leo, eget euismod orci. Cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus. Vestibulum ultricies aliquam convallis. Maecenas ut tellus mi. Proin tincidunt, lectus eu volutpat mattis, ante metus lacinia tellus, vitae condimentum nulla enim bibendum nibh. Praesent turpis risus, interdum nec venenatis id, pretium sit amet purus. Interdum et malesuada fames.</p>
                         </div>
-                        <div class="tab-pane collapse" id="additional" role="tabpanel">
+                        <div id="Additional" class="tabcontent">
                             <table class="table table-striped price-table table-bordered">
                                 <tbody>
                                   <tr>
@@ -773,9 +781,36 @@
         </div>
         </div>
     </div>
+
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function openCity(evt, cityName) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+          }
+          document.getElementById(cityName).style.display = "block";
+          evt.currentTarget.className += " active";
+
+          // Add the "active" class to the Additional Information tab as well
+            if (cityName === 'Additional') {
+                document.getElementById('additional-info-tab').classList.add("active");
+            }
+        }
+        
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+    </script>
+
     <script>
         const input = document.getElementById('numberInput');
-    
         input.addEventListener('input', function() {
             if (this.value < 0) {
                 this.value = 0;

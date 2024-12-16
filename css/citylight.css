@@ -569,6 +569,26 @@ th, td {
     border: none;
     border-radius: 0;
 }
+.description .nav-item .tablinks{
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    color: #323232;
+    background-color: #fafafa;
+    text-transform: uppercase;
+    border: none;
+    padding: 16px 30px;
+    cursor: pointer;
+}
+.description .nav-item .tablinks.active{
+    background-color: #080808;
+    color: #fff;
+    border: none;
+    border-radius: 0;
+}
 .quantity-text .input-group-text{
   height: 50px;
   border-radius: 0px;
@@ -864,18 +884,16 @@ table td.actions button[type=submit]{
 .mobile-view{
     display: none!important;
 }
-/* .mkd-cart-go-back:before {
-    content: "\e879";
-    position: relative;
-    display: inline-block;
-    vertical-align: top;
-    font-family: Linearicons-Free;
-    font-size: 18px;
-    line-height: inherit;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    margin-right: 10px;
-} */
+.details-product .tabcontent {
+    display: none;
+}
+.details-product .tablinks {
+    cursor: pointer;
+}
+  .details-product ul {
+    list-style-type: none;
+}
+
 @media only screen and (max-width: 576px) {
 /* .banner-height{
     height:650px;
