@@ -63,7 +63,7 @@ body {
     position: relative;
     display: inline-block;
     vertical-align: top;
-    float: left;
+    /* float: left; */
 }
 .banners-sliders  .carousel-caption {
     position: absolute!important;
@@ -724,7 +724,7 @@ table td.actions .coupon {
     position: relative;
     display: inline-block;
     vertical-align: middle;
-    float: left;
+    /* float: left; */
     background-color: #f3f3f3;
     box-sizing: border-box;
     padding-right: 10px;
@@ -1198,4 +1198,30 @@ footer .container-fluid .row{
   .billing-overview .mkd-single-product-title.m-0 {
     margin: 0px!important;
   }
+  .login-modal .modal-body ul{
+    padding-right:0px!important;
+    padding-left: 0px!important;
+  }
+  .login-modal .nav-item .nav-link {
+    font-size: 14px;
+    letter-spacing: 2px;
+    padding: 14px 46px;
+    border-radius: 0;
+  }
+  .login-modal .tab-content .card .card-body {
+    padding-right:0px!important;
+    padding-left: 0px!important;
+  }
+  .login-modal input[type="password"], .login-modal input[type="text"], .login-modal input[type="email"] {
+    margin: 0 0 14px;
+    padding: 5px 20px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+    font-size: 13px;
+    line-height: 18px;
+    height: 30px!important;
+  }
+  .login-modal .modal-dialog{
+    width: 350px!important;
+}
 }
